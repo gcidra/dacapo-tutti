@@ -1,0 +1,595 @@
+% -*- latex -*-
+% -*- coding: latin-1 -*-
+
+\documentclass[twoside,12pt]{article}
+\usepackage{graphicx}
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[a4paper,top=2cm,bottom=2cm,left=2cm,right=2cm]{geometry}
+\usepackage{nameref}
+\usepackage{fancyhdr}
+\usepackage[brazil]{babel}              % Acrescentado por Givaldo de Cidra
+\usepackage{url}
+%% \usepackage{makeidx}                    % pkg para índice
+\usepackage{setspace}
+\usepackage{titletoc}
+
+%% novos pacotes
+\usepackage{lastpage}
+\usepackage{wrapfig}
+\usepackage{array}
+\usepackage{tabularx}
+
+
+\titlecontents{section}
+[2 em]
+{}
+{\contentslabel{2em}}
+{\hspace*{-2.3em}}
+{\titlerule*[1pc]{.}\contentspage}
+
+
+\newcommand{\instrumento}[1]{ \textbf{#1} }
+
+%\setlength\@tempdima{1.5em}%
+
+\pagestyle{fancy}                       % Sets fancy header and footer
+\fancyhf{}
+\fancyfoot[RLOEF]{\bfseries\rightmark}     % Oculta o nome das seções
+
+%%Página Ímpar
+\fancyfoot[LO]{\textit{Da Capo Tutti - Vol. 1 - \instrumento{Rodape}}}
+\fancyfoot[RO]{\thepage}
+
+%%Página Par
+\fancyfoot[LE]{\textit{Joel Barbosa}}
+\fancyfoot[RE]{\thepage}
+
+\renewcommand{\headrulewidth}{0.0pt}    % Width of head rule
+\renewcommand{\footrulewidth}{0.0pt}    % Width of foot rule
+
+
+% HOME colocar nos arquivos lytex ============================================
+\newcommand{\letraquadrada}[1]{ \Large{\framebox[1.1\width]{#1} }}
+\newcommand{\quadtitulo}[1]{ \large{\textbf{#1} }}
+\newcommand{\quadtexto}[1]{\small{\textbf{#1}}}
+\def\imagetop#1{\vtop{\null\hbox{#1}}}
+% END colocar nos arquivos lytex ============================================
+
+
+% não espaçar pra encher as páginas:
+\raggedbottom
+
+\begin{document}
+
+\graphicspath{
+  {../figs/}
+  {../figs/jogos/}
+  {../figs/posicoes/}
+  {../figs/quadro/}
+}
+
+
+% \instrumento{Original}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% INICIO CAPAS
+
+
+%%%%%%%%%%%% FOLHA DE ROSTO
+\thispagestyle{empty}
+
+% \begin{flushleft}
+%   \textbf{\huge{\instrumento{InstrCapa}}}
+% \end{flushleft}
+
+\begin{center}
+  \textbf{\huge{\instrumento{InstrCapa}}}
+\end{center}
+
+\vspace*{30ex}
+
+\begin{center}
+\textbf{\huge{DA CAPO TUTTI}}
+\vspace*{4ex}
+
+\textbf{\Large{Método Elementar para o Ensino Coletivo
+    de Instrumentos}}
+\vspace*{14ex}
+
+\textbf{\Large{Volume 1 - Edição Incompleta}}
+\vspace*{15ex}
+
+\textbf{\huge{Joel Barbosa}}
+\vspace*{25ex}
+
+% \includegraphics[scale=0.5]{logo-keyboard}
+% \vspace*{2ex}
+
+\textbf{\Large{ANO 2015}}
+\vspace*{4ex}
+
+\textbf{Copyright by Joel L. da Silva Barbosa \\
+Todos os direitos reservados \\
+IMPRESSO NO BRASIL \\
+% KEYBOARD EDITORA MUSICAL LTDA. \\
+% CAIXA POSTAL 300 \\
+% JUNDIAÍ  -  SP  -  CEP 13201-970 \\
+% E-mail: contato@keyboard.art.br \\
+% site: www.keyboard.art.br 
+}
+\end{center}
+\vspace*{2ex}
+
+
+% \begin{flushright}
+%   \includegraphics[scale=0.7]{%#ISBN-V1-fig#%}
+% \end{flushright}
+
+
+%%%%%%%%%%%% VERSO-FOLHA DE ROSTO
+\newpage
+\thispagestyle{empty}
+
+Nenhuma parte deste livro poderá ser reproduzida ou transmitida sejam
+quais forem os meios: eletrônicos, fotográfico, gravação ou quaisquer
+outros sem a permissão explícita por escrito do autor:
+\textbf{JOEL L. da SILVA BARBOSA}
+\vspace*{20ex}
+
+\begin{tabular}{|p{15cm}|}
+\hline
+\\
+BARBOSA, J. L. da Silva \\
+\\
+DA CAPO TUTTI \instrumento{Original} Vol. 1. % Jundiaí, São Paulo: \\
+% Keyboard Editora Musical Ltda. 
+2015, p. \pageref{LastPage} \\
+\\
+Didático/Pedagógico \\
+% ISBN nº %#ISBN-V1#% \\
+\\
+% Copyright 2011 by Keyboard Editora Musical Ltda. \_Todos os direitos reservado\_ \\
+% R: Rangel Pestana 1044 - Jundiaí - São Paulo - CEP 13201-000 \\
+% e-mail: contato@keyboard.art.br \\
+\\
+\hline
+\end{tabular}
+\vspace*{30ex}
+
+\begin{flushleft}
+  Editoração: Givaldo de Cidra\\
+  % Capa: Reprodução da Colagem de Silvio Alvarez\\
+\end{flushleft}
+
+% \begin{flushleft}
+%   Editado e Impresso por Keyboard Editora Musical Ltda\\
+% \end{flushleft}
+
+\begin{flushleft}
+  Registro na Fundação Biblioteca Nacional\\
+  Ministério da Cultura\\
+  Escritório de Direitos Autorais\\
+\end{flushleft}
+
+\begin{flushleft}
+  % Nº %#ISBN-V1#% \\
+  Autor: Joel L da Silva Barbosa \\
+  Título da Obra: DA CAPO TUTTI \instrumento{Original} Vol. 1.\\
+\end{flushleft}
+
+% %%%%%%%%%%%% FOLHA DO MAESTRO MARCELO
+% \newpage
+\pagenumbering{roman}
+% \section*{Aos Leitores}
+% \label{sec:maestro-marcelo}
+% \addcontentsline{toc}{section}{Aos Leitores}
+
+% \input {maestro-marcelo}
+
+
+% %%%%%%%%%%%% FOLHA DA BIOGRAFIA
+% \newpage
+% \section*{Sobre o Autor}
+% \addcontentsline{toc}{section}{Sobre o Autor}
+
+% \input {biografia-joel}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% FINAL CAPAS
+
+
+\newpage
+\section*{Agradecimentos}
+\addcontentsline{toc}{section}{Agradecimentos}
+
+A Pedro Kroeger pela consultoria e apoio computacional,\\
+A Givaldo de Cidra pela editoração,\\
+A Bertalan Fodor pelas dicas com o programa Lilypond,\\
+Aos colegas que trocaram idéias comigo sobre este trabalho,\\
+A UFBA pelo apoio institucional e\\
+Aos cooperadores do programa Lilypond (\url{http://www.lilypond.org}),
+através do qual as partes musicais foram digitalizadas.\\
+
+
+\section*{Palavras aos alunos e ao professor/regente}
+\addcontentsline{toc}{section}{Palavras aos alunos e ao professor/regente}
+
+O livro Da Capo Criatividade Tutti é para o ensino coletivo de
+instrumentos heterogêneos. Os instrumentos que o compõem são:
+
+Cavaquinho e Banjo, Bandolim, Viola, Violão Tenor, Violão, Baixo e
+Baixolão. 
+
+Ele pode ser usado em aulas individuais, em aulas de
+pequenos grupos de instrumentos semelhantes ou variados e com todos os
+instrumentos propostos. Por exemplo, pode-se trabalhar apenas com
+violão ou, mesmo, cavaquinho e bandolim.
+
+Ele inclui atividades de teoria, leitura, percepção, apreciação
+musical, performance, prática de conjunto, técnica instrumental,
+imitação e criatividade. Conteúdos de teoria e leitura musical são
+expostos por meio de quadros e, em seguida, colocados em
+prática. Também há letras que dividem as melodias em frases e
+semi-frases, auxiliando sua compreensão e, conseqüentemente, sua
+interpetação. A imitação amplia a capacidade de percepção e apreciação
+musical assim como a audição da execução dos colegas. A performance e
+a prática de conjunto serão instrumental e cantada, compreendendo o
+centro das atividades cotidianas. Elas mediarão o processo de
+compreensão e desenvolvimento das habilidades de leitura musical e
+técnica instrumental. Finalmente, a criatividade, habilidade
+fundamental na formação do músico, é desenvolvida por meio de
+improvisação, arranjos e composição.
+
+Para maiores explicações e dicas, além das contidas abaixo, indicamos
+o site: 
+
+\url{http://www.dacapo.mus.br.}
+
+
+\subsection*{I - Explicações e dicas}
+\addcontentsline{toc}{section}{Explicações e dicas}
+
+\begin{enumerate}
+
+
+\item As cabeças de mínimas e semínimas desacompanhadas de hastes indicam
+  notas que devem ser usadas para improvisação. As cabeças de mínimas
+  são notas pertencentes ao acorde, consonantes, enquanto as de
+  semínimas são notas que causam dissonâncias; notas de passagem, por
+  exemplo.
+
+  \begin[fragment]{lilypond}
+    \transpose c c {
+      \keepWithTag #'tt
+      \include "tt-ex1.ly"
+    }
+  \end{lilypond}
+
+\break
+
+\item As cabeças de notas em formato de barra indicam atividades de
+  imitação (atividades de se tocar ``de ouvido''). Elas são notas que
+  servem de dicas para se imitar um improviso realizado. Informam o
+  conjunto de notas que o improvisador fez uso. As notas do exemplo abaixo
+  indicam as notas que podem ter sido utilizadas pelo improvisador do
+  exemplo anterior:
+
+  \begin[fragment]{lilypond}
+    \transpose c c {
+      \keepWithTag #'cv
+      \include "tt-ex2.ly"
+    }
+  \end{lilypond}
+
+
+\item Nas músicas com mais de uma voz, defina diferentes grupos
+  instrumentais para cada voz, escolhendo, por exemplo, os de registro
+  agudo para a voz superior (melodia), os de registro médio para as
+  vozes intermediárias (harmonia) e os de registro mais grave para a
+  inferior (baixo). Porém, experimente outras distribuições dos
+  instrumentos por vozes, utilizando apenas violões, por
+  exemplo. Também utilize, algumas vezes, apenas um instrumentista por
+  voz, formando trios, quartetos, quintetos etc.
+
+\item Há letras e números sobre os compassos e semi-frases
+  dos exercícios e das melodias para facilitar as atividades. Nas
+  letras ou números que não são de improvisação e imitação, pode-se
+  usar: a) a banda toda, b) diferentes grupos instrumentais e/ou c) um
+  instrumentista, mudando-o ou não a cada letra.
+
+\item Os exercícios de improvisação sobre melodias têm na
+  \textbf{Parte 1} a melodia, com a letra da música, e nas
+  \textbf{Parte 2} e \textbf{Parte 3} improvisação ou melodia e
+  improvisação. Repita as Partes 2 e 3 várias vezes, até que todos
+  improvisem.
+
+
+\item Sobre as notas de improvisação aparecem, em algumas atividades,
+  os acordes (C, F, G7 etc). Eles indicam os acordes a que
+  pertencem as notas da improvisação.
+
+  \begin[fragment]{lilypond}
+    \transpose c c {
+      \keepWithTag #'cv
+      \include "tt-ex3.ly"
+    }
+  \end{lilypond}
+
+\end{enumerate}
+
+\subsection*{II - Quanto a improvisação}
+\addcontentsline{toc}{section}{Quanto a improvisação}
+
+\begin{enumerate}
+
+\item Quem deve improvisar no Método? 
+
+  O professor, os alunos e/ou convidados.
+
+\item Quem escolhe os improvisadores e sua ordem ou seqüência? 
+
+  O professor e/ou aluno(s).
+
+\item Como determinar a ordem dos improvisadores?  
+
+  Pela ordem que estão sentados, por nomes (João, Maria etc) ou por
+  instrumentos. A ordem pode ser comunicada antes de iniciar a música
+  ou ir sendo anunciada durante a improvisação. Neste último caso, o
+  professor, um aluno ou o improvisador anterior diz o nome ou aponta
+  gestualmente o próximo improvisador, enquanto o grupo continua
+  tocando. Para que o improvisador anterior indique o próximo, ele
+  deve deixar, obviamente, uma pausa no fim do improviso.
+
+
+\item A fim de ganhar tempo, pode-se criar ordens fixas de
+  improvisadores, seqüências padronizadas, e nomeá-las. Por exemplo:
+
+  \textbf { Padrão de Improvisação 1 }:
+
+  Primeiro improvisador: Maria do cavaquinho, 
+
+  Segundo: João do bandolim, 
+
+  Terceiro: José do violão e
+
+  Quarto: Luiza da viola.
+
+  Assim, em vez de criar e explicar uma diferente ordem cada vez que for
+  tocar um dado exercicío, basta dizer com que Padrão ele será
+  tocado.
+
+\item Com que acompanhamento improvisar? 
+
+  Mude o acompanhamento rítmico proposto nas lições que têm
+  improvisação, variando, de acordo com as possibilidades da
+  melodia. Utilize, por exemplo, ritmos de samba, marcha, baião,
+  xaxado, maracatu, coco etc.
+  %% se colocar o apendice de ritmos, explicar aqui.
+
+
+\end{enumerate}
+
+\subsection* {III - Quanto a imitação}
+\addcontentsline{toc}{section}{Quanto a imitação}
+
+\begin{enumerate}
+
+\item Quem faz imitações no Método? 
+
+  Um aluno, um grupo (cavaquinho, bandolim, violão, meninas, meninos
+  etc) ou todos.
+
+
+\item Quem escolhe os imitadores e sua ordem ou sequência? 
+
+  O professor, um aluno e/ou um grupo de alunos.
+
+\item Como determinar a ordem dos imitadores? 
+
+  Da mesma forma que se faz com a improvisação. Por nomes (João,
+  Maria etc), gêneros (meninos, meninas),
+  instrumentos, naipes (viola, baixo) ou pela ordem que estão
+  sentados (linha da frente, primeiro da linha etc). A ordem pode
+  ser definida antes de iniciar a música ou ir sendo comunicada
+  durante a improvisação. Neste último caso, o professor, um aluno ou
+  o improvisador diz o nome ou aponta gestualmente quem, ou que grupo,
+  imitará o improvisador. Isto desenvolve a concentação dos participantes.
+
+\item A fim de ganhar tempo, pode-se criar também ordens fixas de
+  imitadores, sequências padronizadas, e nomeá-las. Por exemplo:
+
+  \textbf {Padrão de Imitação A}:
+
+  Primeiros imitadores: Cavaquinho e Banjo,
+
+  Segundos: Bandolim e Violão Tenor, 
+
+  Terceiros: Viola e Violão,
+
+  Quartos: Baixo.
+
+\item Utilize as letras ou números colocados sobre os compassos e
+  semi-frases das melodias para distribuir a ordem dos alunos que
+  farão a imitação.
+
+\end{enumerate}
+
+
+\break
+
+\pagenumbering{arabic}  % fim da numeração das páginas em algarismos romanos
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% INICIO DO LIVRO
+
+
+\newpage
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 01 - VOL 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \begin{table}[!ht]
+%   \centering
+%   \renewcommand{\tablename}{Quadro}
+%   \caption{Rudimentos de Teoria}
+%   \label{Quadro_01}
+%   \begin{tabular}[t]{|l|l|l|}
+%     \hline
+
+%     %%% PRÓXIMA LINHA
+%     \letraquadrada{A} \quadtitulo{%#claves#%}
+%     &
+%     \letraquadrada{B} \quadtitulo{Compasso}
+%     & 
+%     \letraquadrada{C} \quadtitulo{Barra de Compasso}
+
+    
+
+%     %%% PRÓXIMA LINHA
+%     \\
+%     \begin[fragment]{lilypond}
+%       \transpose c c { 
+%         \keepWithTag #'cv
+%         \include "claves.ly" 
+%       }
+%     \end{lilypond}
+%     &
+%     \includegraphics[scale=1]{compasso-vazio}
+%     &
+%     \includegraphics[scale=1]{barra-compasso}
+
+
+%     %%% PRÓXIMA LINHA
+%     \\
+%     \hline
+%     \multicolumn{2}{|l|}{\letraquadrada{D} \quadtitulo{Compasso Quaternário}}
+%     &    
+%     \letraquadrada{E} \quadtitulo{Barra Final}
+
+
+%     %%% PRÓXIMA LINHA
+%     \\
+%     \multicolumn{2}{|l|}{\includegraphics[scale=1]{formula-4tempos-por-compasso}}
+%     &
+%     \includegraphics[scale=1]{barra-final}
+
+
+%     %%% FINAL DAS LINHAS
+%   \\
+%   \hline
+%   \end{tabular}
+% \end{table}    
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 01 - VOL 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% %%% complemento do QUADRO 01
+% \begin{center}
+% %#exemplo-01#%
+% \end{center}
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%% INICIO QUADRO 02 - VOL 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \begin{table}[!ht]
+%   \centering
+%   \renewcommand{\tablename}{Quadro}
+%   \caption{Cordas Soltas}
+%   \label{Quadro_02}
+%   \begin{tabular}[t]{|ll|l|l|}
+%     \hline
+
+%     %%% PRÓXIMA LINHA
+%     \multicolumn{2}{|l|}{ \letraquadrada{A} }    &    \letraquadrada{B}    &    \letraquadrada{C}
+
+
+%     %%% PRÓXIMA LINHA
+%     \\
+%     \quadtitulo{%#nota-01#%}
+%     &
+%     \quadtitulo{%#nota-02#%}
+%     &
+%     \quadtitulo{Mínima}
+%     &
+%     \quadtitulo{Semínima}
+
+%     %%% PRÓXIMA LINHA
+%     \\
+%     \begin[fragment]{lilypond}
+%       \transpose c c {
+%         \keepWithTag #'cv
+%         \include "nota-01.ly"
+%       }
+%     \end{lilypond}
+%     &
+%     \begin[fragment]{lilypond}
+%       \transpose c c { 
+%         \keepWithTag #'cv
+%         \include "nota-02.ly" 
+%       }
+%     \end{lilypond}
+%     &
+%     \includegraphics[scale=1]{minima}
+%     &
+%     \includegraphics[scale=1]{seminima}
+
+
+%     %%% PRÓXIMA LINHA
+%     \\
+%     \hline
+%     \letraquadrada{D}  & \em  & \letraquadrada{E} & \letraquadrada{F}
+
+%     %%% PRÓXIMA LINHA
+%     \\
+%     \quadtitulo{Sinal de Repetição}
+%     &
+%     \em
+%     &
+%     \quadtitulo{Técnica}
+%     &
+%     \quadtitulo{Pausa de Semibreve}
+
+%     %%% PRÓXIMA LINHA
+%     \\
+%     \includegraphics[scale=1]{sinal-repeticao}
+%     &
+%     \em
+%     &
+%     \includegraphics[scale=0.7]{mao-i-m}
+%     &
+%     \includegraphics[scale=1]{semibreve-pausa}
+
+
+
+%     %%% FINAL DAS LINHAS
+%   \\
+%   \hline
+%   \end{tabular}
+% \end{table}    
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%% FINAL QUADRO 02 - VOL 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%% INÍCIO DAS LIÇÕES DA VERSÃO 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Quatro por Um}
+\label{sec:quatro-por-um}
+
+\begin{lilypond}[line-width=17\cm]
+  \transpose c c {
+    \keepWithTag #'fl
+    \include "tt-001.ly"
+  }
+\end{lilypond}
+
+
+
+%%%%% FINAL DAS LIÇÕES DA VERSÃO 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+
+  \tableofcontents
+
+
+\renewcommand\listtablename{Lista dos Quadros}
+  \listoftables
+
+\end{document}

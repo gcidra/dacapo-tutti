@@ -1,0 +1,69 @@
+#-*- mode: org; -*-
+
+* Tarefas
+** Realizadas
+
+** A FAZER
+
+* Códigos novos
+** markups
+\override TextScript #'padding = #2
+
+
+^\markup {\small {\box "A"}}
+^\markup {\italic {\bold "Allegro"}}
+^\markup {\column {\italic {\bold "Allegro"} \small \box {"A"}}}
+^\markup {\column {\bold {\line {"Parte 1"} \line {\italic "Allegro"}} \small \box {"A"}}}
+
+
+^\markup {\italic {"Fine"}}
+^\markup{\italic {"D.C. al Fine"}}
+^\markup{\italic {\column{\line {"D.C."} \line{"al Fine"}}}}
+
+** Ligaduras ()
+- Ligadura  tracejada
+\slurDashed
+
+- Ligadura pontilhada
+\slurDotted
+
+- Ligadura normal
+\slurSolid
+
+** comprimir compassos em pausa
+\set Score.skipBars = ##t
+\override MultiMeasureRest #'expand-limit = #3
+
+** Dinamicas
+\crescTextCresc
+
+\dimTextDecresc
+
+\crescHairpin
+normal cresc.
+
+\dimHairpin
+normal dim.
+
+** Key Signatures
+\set Staff.keySignature = #`(((1 . 0) . ,SHARP)  
+                             ((1 . 3) . ,FLAT)
+                             ((1 . 3) . ,NATURAL))
+
+Octave   Step      Alter
+1   .    0         ,SHARP
+** Acordes
+s^\markup \fret-diagram #"f:2;6-o;5-2-2;4-2-3;3-o;2-o;1-o;"
+s^\markup \fret-diagram #"f:2;w:4;4-2-2;3-1-1;2-o;1-o;"
+s^\markup \fret-diagram #"f:2;w:4;c:4-3-2;4-2-2;3-1-1;2-o;1-o;"
+
+f:2 = tipo de marcação para dedos
+w:4 = número de cordas
+c:4-3-2 = pestana na corda 4 até a 3 na casa 2
+** Fingers
+#(define RH rightHandFinger)
+<c-\RH #1 >4
+<e-\RH #2 >4
+<g-\RH #3 >4
+<c-\RH #4 >4
+
