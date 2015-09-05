@@ -1,5 +1,5 @@
-file = dacapo-tutti-vol1.lytex
-# file = teste.lytex
+# file = dacapo-tutti-vol1.lytex
+file = teste.lytex
 file-regencia = regencia-dacapo-tutti.lytex
 # file-regencia = teste.lytex
 file-percussao = percussao-dacapo.lytex
@@ -12,8 +12,8 @@ all-reg := $(notdir $(patsubst %.ly,%.reg,$(wildcard ly/*.ly)))
 
 
 regencia = regencia
-percussao = percussao
-instrumentos = flauta cavaquinho bandolim viola violaotenor violao baixo
+percussao = perc
+instrumentos = flauta piano percussao cavaquinho bandolim viola violaotenor violao baixo
 
 all_inst = $(addsuffix .pdf,$(instrumentos))
 
@@ -35,7 +35,7 @@ regencia.lytex: $(file-regencia)  Makefile arquivos_regencia
 	-e 's/%%break-reg/\\break/g' $< > $@
 
 
-percussao.lytex: $(file-percussao) Makefile arquivos_regencia
+perc.lytex: $(file-percussao) Makefile arquivos_regencia
 	sed  -e 's/%#fasustenido#%/mi natural/g' \
 	-e 's/%%break-per/\\break/g' \
 	-e 's/instrumento{InstrCapa}/instrumento{Percussão}/g' \
@@ -47,7 +47,33 @@ flauta.lytex: $(file) Makefile
 	-e 's/instrumento{InstrCapa}/instrumento{Flauta - Gaita em Sol e Cromática - Escaleta}/g' \
 	-e 's/instrumento{Original}/instrumento{Flauta - Gaita em Sol e Cromática - Escaleta}/g' \
 	-e 's/instrumento{Rodape}/instrumento{Flauta - Gaita em Sol e Cromática - Escaleta}/g' \
-	-e 's/%%break-tt/\\break/g' \
+	-e 's/%%break-fl/\\break/g' \
+	-e 's/%#claves#%/Clave de Sol/g' \
+	-e 's/%#exemplo-01#%/\\includegraphics[scale=1]{ex1-sol}/g' \
+	-e 's/%#nota-01#%/Ré/g' \
+	-e 's/%#nota-02#%/Si/g' \
+	-e 's/%#casa1e2#%/clave-sol-casa1e2/g' \
+	-e "s/transpose c c/transpose c c/g" $< > $@
+
+piano.lytex: $(file) Makefile
+	sed -e "s/keepWithTag #'fl/\keepWithTag #'pn/g" \
+	-e 's/instrumento{InstrCapa}/instrumento{Piano - Acordeão}/g' \
+	-e 's/instrumento{Original}/instrumento{Piano - Acordeão}/g' \
+	-e 's/instrumento{Rodape}/instrumento{Piano - Acordeão}/g' \
+	-e 's/%%break-pn/\\break/g' \
+	-e 's/%#claves#%/Clave de Sol/g' \
+	-e 's/%#exemplo-01#%/\\includegraphics[scale=1]{ex1-sol}/g' \
+	-e 's/%#nota-01#%/Ré/g' \
+	-e 's/%#nota-02#%/Si/g' \
+	-e 's/%#casa1e2#%/clave-sol-casa1e2/g' \
+	-e "s/transpose c c/transpose c c/g" $< > $@
+
+percussao.lytex: $(file) Makefile
+	sed -e "s/keepWithTag #'fl/\keepWithTag #'per/g" \
+	-e 's/instrumento{InstrCapa}/instrumento{Percussão}/g' \
+	-e 's/instrumento{Original}/instrumento{Percussão}/g' \
+	-e 's/instrumento{Rodape}/instrumento{Percussão}/g' \
+	-e 's/%%break-per/\\break/g' \
 	-e 's/%#claves#%/Clave de Sol/g' \
 	-e 's/%#exemplo-01#%/\\includegraphics[scale=1]{ex1-sol}/g' \
 	-e 's/%#nota-01#%/Ré/g' \
