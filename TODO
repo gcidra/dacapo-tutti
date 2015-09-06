@@ -107,7 +107,10 @@ violoncelo
 contrabaixo
 
 ** códigos PDF - Makefile
-*** regencia.pdf
+*** regencia
+> regencia.pdf
+
+  . Regência
 
 *** flauta
 > flauta-gaita-escaleta.pdf
