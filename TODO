@@ -68,6 +68,41 @@ c:4-3-2 = pestana na corda 4 até a 3 na casa 2
 <c-\RH #4 >4
 
 * Livros em geral
+** códigos bash - Alias
+flauta
+oboe
+flautaDoceSoprano
+flautaDoceContralto
+flautaDoceBaixo
+clarineta
+saxalto
+saxbaritono
+saxsoprano
+saxtenor
+fagote
+saxhorn
+trompa
+trompete
+bombardinoClaveSol
+trombone
+bombardinoClaveFa
+tuba
+piano
+percussao
+cavaquinho
+banjo
+violaCaipira
+violaMachete
+violao
+violaotenor
+violino
+viola
+violoncelo
+bandolim
+rabeca
+baixo
+
+** códigos PDF - Makefile
 regencia.pdf
 flauta-gaita-escaleta.pdf
 oboe-flautaDoceSoprano.pdf
