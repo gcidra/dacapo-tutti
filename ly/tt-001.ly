@@ -218,7 +218,7 @@
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
     
-     <<
+    <<
       {fis1^"Tu"}
       \\
       {s_"1 2 3 4"}
@@ -306,7 +306,7 @@
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
     
-  <<
+    <<
       {d1^"Tu"}
       \\
       {s_"1 2 3 4"}
@@ -336,7 +336,7 @@
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
     
-  <<
+    <<
       {d1^"Tu"}
       \\
       {s_"1 2 3 4"}
