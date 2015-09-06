@@ -70,11 +70,14 @@ c:4-3-2 = pestana na corda 4 até a 3 na casa 2
 * Livros em geral
 ** códigos bash - Alias
 flauta
+gaita
+escaleta
 oboe
 flautaDoceSoprano
 flautaDoceContralto
 flautaDoceBaixo
 clarineta
+clarone
 saxalto
 saxbaritono
 saxsoprano
@@ -88,8 +91,11 @@ trombone
 bombardinoClaveFa
 tuba
 piano
+acordeao
 percussao
 cavaquinho
+bandolim
+rabeca
 banjo
 violaCaipira
 violaMachete
@@ -98,9 +104,7 @@ violaotenor
 violino
 viola
 violoncelo
-bandolim
-rabeca
-baixo
+contrabaixo
 
 ** códigos PDF - Makefile
 regencia.pdf
