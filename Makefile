@@ -1,7 +1,7 @@
 # file = dacapo-tutti-vol1.lytex
 file = teste.lytex
-file-regencia = regencia-dacapo-tutti.lytex
-# file-regencia = teste.lytex
+# file-regencia = regencia-dacapo-tutti.lytex
+file-regencia = teste.lytex
 
 
 vpath %.reg reg
