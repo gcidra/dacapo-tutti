@@ -401,17 +401,20 @@
         \time 4/4 
         \override Score.BarNumber #'transparent = ##t
         \override Score.RehearsalMark #'font-size = #-2
+        s4*0^\markup {\tiny \hspace#-8 "Caixa"}
+        s4*0_\markup {\tiny \hspace#-8 "Bombo"}
+        
         <<
           {
             \stemUp
-            sn4^"D"_"1" sn^"E" sn^"D" sn^"E"
-            sn sn sn sn
-            sn sn sn sn
-            sn sn sn sn
-            sn sn sn sn
-            sn sn sn sn
-            sn sn sn sn
-            sn sn sn sn
+            sn4^"D"_"1" sn^"E"_"2" sn^"D"_"3" sn^"E"_"4"
+            sn^"D"_"1" sn^"E"_"2" sn^"D"_"3" sn^"E"_"4"
+            sn^"D"_"1" sn^"E"_"2" sn^"D"_"3" sn^"E"_"4"
+            sn^"D" sn^"E" sn^"D" sn^"E"
+            sn^"D" sn^"E" sn^"D" sn^"E"
+            sn^"D" sn^"E" sn^"D" sn^"E"
+            sn^"D" sn^"E" sn^"D" sn^"E"
+            sn^"D" sn^"E" sn^"D" sn^"E"
           }
           \\
           {
@@ -438,11 +441,11 @@
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
     
-    d4 d d d
+    d4_"1" d_"2" d_"3" d_"4"
     R1
-    d4 d d d
+    d4_"1" d_"2" d_"3" d_"4"
     R1
-    d4 d d d
+    d4_"1" d_"2" d_"3" d_"4"
     R1
     d4 d d d
     d d d d
@@ -456,11 +459,11 @@
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
     
-    d4 d d d
+    d4_"1" d_"2" d_"3" d_"4"
     R1
-    d4 d d d
+    d4_"1" d_"2" d_"3" d_"4"
     R1
-    d4 d d d
+    d4_"1" d_"2" d_"3" d_"4"
     R1
     d4 d d d
     d d d d
@@ -474,11 +477,11 @@
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
     
-    d4^\markup {\italic pizz.} d d d
+    d4^\markup {\italic pizz.}_"1" d_"2" d_"3" d_"4"
     R1
-    d4 d d d
+    d4_"1" d_"2" d_"3" d_"4"
     R1
-    d4 d d d
+    d4_"1" d_"2" d_"3" d_"4"
     R1
     d4 d d d
     d d d d
@@ -487,16 +490,17 @@
 
   %% VIOLA - VIOLÃO TENOR
   \tag #'vla {
+    \clef alto
     \override Staff.TimeSignature #'style = #'()
     \time 4/4 
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
     
-    d4^\markup {\italic pizz.} d d d
+    d4^\markup {\italic pizz.}_"1" d_"2" d_"3" d_"4"
     R1
-    d4 d d d
+    d4_"1" d_"2" d_"3" d_"4"
     R1
-    d4 d d d
+    d4_"1" d_"2" d_"3" d_"4"
     R1
     d4 d d d
     d d d d
@@ -511,11 +515,11 @@
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
     
-    d,4^\markup {\italic pizz.} d d d
+    d4^\markup {\italic pizz.}_"1" d_"2" d_"3" d_"4"
     R1
-    d4 d d d
+    d4_"1" d_"2" d_"3" d_"4"
     R1
-    d4 d d d
+    d4_"1" d_"2" d_"3" d_"4"
     R1
     d4 d d d
     d d d d
@@ -529,11 +533,11 @@
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
     
-    d4^\markup {\italic pizz.} d d d
+    d4^\markup {\italic pizz.}_"1" d_"2" d_"3" d_"4"
     R1
-    d4 d d d
+    d4_"1" d_"2" d_"3" d_"4"
     R1
-    d4 d d d
+    d4_"1" d_"2" d_"3" d_"4"
     R1
     d4 d d d
     d d d d
