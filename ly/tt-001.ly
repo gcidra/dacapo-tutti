@@ -1,6 +1,5 @@
 %% -*- coding: utf-8 -*-
 \version "2.18.2"
-
 %%\header { texidoc="1 - Quatro por Um"}
 
 \relative c'' {
@@ -74,7 +73,7 @@
   }
 
   %% SAX ALTO - SAX BARÍTONO
-  \tag #'sxa {
+  \tag #'sxab {
     \override Staff.TimeSignature #'style = #'()
     \time 4/4 
     \override Score.BarNumber #'transparent = ##t
@@ -91,7 +90,7 @@
   }
 
   %% SAX SOPRANO - SAX TENOR
-  \tag #'sxs {
+  \tag #'sxst {
     \override Staff.TimeSignature #'style = #'()
     \time 4/4 
     \override Score.BarNumber #'transparent = ##t
@@ -290,8 +289,8 @@
     d d d d
   }
 
-    %% VIOLÃO - VIOLA MANCHETE
-  \tag #'vi {
+  %% VIOLÃO - VIOLA MANCHETE
+  \tag #'vlao {
     \clef "G_8"
     \override Staff.TimeSignature #'style = #'()
     \time 4/4 
@@ -310,13 +309,13 @@
 
 
   %% VIOLINO - BANDOLIM 1 E 2 - RABECA
-  \tag #'bd {
+  \tag #'vn {
     \override Staff.TimeSignature #'style = #'()
     \time 4/4 
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
     
-    d4_\markup {\italic pizz.} d d d
+    d4^\markup {\italic pizz.} d d d
     R1
     d4 d d d
     R1
@@ -334,7 +333,7 @@
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
     
-    d4_\markup {\italic pizz.} d d d
+    d4^\markup {\italic pizz.} d d d
     R1
     d4 d d d
     R1
@@ -353,7 +352,7 @@
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
     
-    d,4_\markup {\italic pizz.} d d d
+    d,4^\markup {\italic pizz.} d d d
     R1
     d4 d d d
     R1
@@ -371,7 +370,7 @@
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
     
-    d4_\markup {\italic pizz.} d d d
+    d4^\markup {\italic pizz.} d d d
     R1
     d4 d d d
     R1
