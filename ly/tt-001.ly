@@ -327,7 +327,7 @@
   }
 
   %% VIOLA - VIOLÃO TENOR
-  \tag #'va {
+  \tag #'vla {
     \override Staff.TimeSignature #'style = #'()
     \time 4/4 
     \override Score.BarNumber #'transparent = ##t
@@ -345,7 +345,7 @@
   }
 
   %% VIOLONCELO
-  \tag #'bx {
+  \tag #'vc {
     \clef bass
     \override Staff.TimeSignature #'style = #'()
     \time 4/4 
