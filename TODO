@@ -107,24 +107,123 @@ violoncelo
 contrabaixo
 
 ** códigos PDF - Makefile
-regencia.pdf
-flauta-gaita-escaleta.pdf
-oboe-flautaDoceSoprano.pdf
-flautaDoceContralto.pdf
-clarineta-clarone.pdf
-saxAlto-saxBaritono.pdf
-saxSoprano-saxTenor.pdf
-fagote-flautaDoceBaixo.pdf
-saxHorn.pdf
-trompa.pdf
-trompete-bombardinoClaveDeSol.pdf
-trombone-bombardino.pdf
-tuba.pdf
-piano-acordeao.pdf
-percussao.pdf
-cavaquinho-banjo-violasCaipiraCocho.pdf
-violao-violaMachete.pdf
-violino-bandolim-rabeca.pdf
-viola-violaoTenor.pdf
-violoncelo.pdf
-baixo-baixoEletrico.pdf
+*** regencia.pdf
+
+*** flauta
+> flauta-gaita-escaleta.pdf
+
+  . Flauta
+  . Gaita em Sol
+  . Gaita Cromática
+  . Escaleta
+
+*** oboe
+> oboe-flautaDoceSoprano.pdf
+
+  . Oboé
+  . Flauta Doce Soprano
+
+*** flautaDoceContralto
+> flautaDoceContralto.pdf
+
+  . Flauta Doce Contralto
+
+*** clarineta
+> clarineta-clarone.pdf
+
+  . Clarineta
+  . Clarone
+
+*** saxalto
+>saxAlto-saxBaritono.pdf
+
+  . Sax Alto
+  . Sax Barítono
+
+*** saxsoprano
+> saxSoprano-saxTenor.pdf
+
+  . Sax Soprano
+  . Sax Tenor
+
+*** fagote
+> fagote-flautaDoceBaixo.pdf
+
+  . Fagote
+  . Flauta Doce Baixo
+
+*** saxhorn
+> saxHorn.pdf
+
+  . Saxhorn
+
+*** trompa
+> trompa.pdf
+
+  . Trompa
+
+*** trompete
+> trompete-bombardinoClaveDeSol.pdf
+
+  . Trompete
+  . Bombardino em Clave de Sol
+
+*** trombone
+> trombone-bombardino.pdf
+
+  . Trombone
+  . Bombardino
+
+*** tuba
+> tuba.pdf
+
+  . Tuba
+
+*** piano
+> piano-acordeao.pdf
+
+  . Piano
+  . Acordeão
+
+*** percussao
+> percussao.pdf
+
+  . Percussão (Bombo e Caixa)
+
+*** cavaquinho
+> cavaquinho-banjo-violasCaipiraCocho.pdf
+
+  . Cavaquinho
+  . Banjo
+  . Viola Caipira
+  . Viola de Cocho
+
+*** violao
+> violao-violaMachete.pdf
+
+  . Violão
+  . Viola Machete
+
+*** violino
+> violino-bandolim-rabeca.pdf
+
+  . Violino
+  . Bandolim 1 e 2
+  . Rabeca
+
+*** viola
+> viola-violaoTenor.pdf
+
+  . Viola
+  . Violão Tenor
+
+*** violoncelo
+> violoncelo.pdf
+
+  . Violoncelo
+
+*** contrabaixo
+> baixo-baixoEletrico.pdf
+
+  . Contrabaixo
+  . Baixo Elétrico
