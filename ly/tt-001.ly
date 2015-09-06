@@ -11,14 +11,26 @@
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
     
-    a1
+    <<
+      {a1^\markup{Tu} }
+      \\
+      {s_\markup{1 2 3 4} }
+    >>
     R
-    a
+    <<
+      {a^\markup{Tu} }
+      \\
+      {s_\markup{1 2 3 4} }
+    >>
     R
-    a
+    <<
+      {a^\markup{Tu} }
+      \\
+      {s_\markup{1 2 3 4} }
+    >>
     R
-    a
-    a
+    a^\markup{Tu}
+    a^\markup{Tu}
   }
 
   %% OBOÉ - FLAUTA DOCE SOPRANO
