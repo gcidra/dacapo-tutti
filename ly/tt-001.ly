@@ -12,25 +12,25 @@
     \override Score.RehearsalMark #'font-size = #-2
     
     <<
-      {a1^\markup{Tu} }
+      {a1^"Tu"}
       \\
-      {s_\markup{1 2 3 4} }
+      {s_"1 2 3 4"}
     >>
     R
     <<
-      {a^\markup{Tu} }
+      {a^"Tu"}
       \\
-      {s_\markup{1 2 3 4} }
+      {s_"1 2 3 4"}
     >>
     R
     <<
-      {a^\markup{Tu} }
+      {a^"Tu"}
       \\
-      {s_\markup{1 2 3 4} }
+      {s_"1 2 3 4"}
     >>
     R
-    a^\markup{Tu}
-    a^\markup{Tu}
+    a^"Tu"
+    a^"Tu"
   }
 
   %% OBOÉ - FLAUTA DOCE SOPRANO
@@ -40,14 +40,27 @@
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
     
-    a1
+    <<
+      {a1^"Tu"}
+      \\
+      {s_"1 2 3 4"}
+    >>
     R
-    a
+    <<
+      {a^"Tu"}
+      \\
+      {s_"1 2 3 4"}
+    >>
     R
-    a
+    <<
+      {a^"Tu"}
+      \\
+      {s_"1 2 3 4"}
+    >>
     R
-    a
-    a
+    a^"Tu"
+    a^"Tu"
+
   }
 
   %% FLAUTA DOCE CONTRALTO
@@ -57,14 +70,26 @@
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
     
-    d1
+    <<
+      {d1^"Tu"}
+      \\
+      {s_"1 2 3 4"}
+    >>
     R
-    d
+    <<
+      {d^"Tu"}
+      \\
+      {s_"1 2 3 4"}
+    >>
     R
-    d
+    <<
+      {d^"Tu"}
+      \\
+      {s_"1 2 3 4"}
+    >>
     R
-    d
-    d
+    d^"Tu"
+    d^"Tu"
   }
 
   %% CLARINETA - CLARONE
@@ -74,14 +99,27 @@
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
     
-    e1
+    <<
+      {e1^"Tu"}
+      \\
+      {s_"1 2 3 4"}
+    >>
     R
-    e
+    <<
+      {e^"Tu"}
+      \\
+      {s_"1 2 3 4"}
+    >>
     R
-    e
+    <<
+      {e^"Tu"}
+      \\
+      {s_"1 2 3 4"}
+    >>
     R
-    e
-    e
+    e^"Tu"
+    e^"Tu"
+
   }
 
   %% SAX ALTO - SAX BARÍTONO
@@ -91,14 +129,27 @@
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
     
-    b1
+    <<
+      {b1^"Tu"}
+      \\
+      {s_"1 2 3 4"}
+    >>
     R
-    b
+    <<
+      {b^"Tu"}
+      \\
+      {s_"1 2 3 4"}
+    >>
     R
-    b
+    <<
+      {b^"Tu"}
+      \\
+      {s_"1 2 3 4"}
+    >>
     R
-    b
-    b
+    b^"Tu"
+    b^"Tu"
+
   }
 
   %% SAX SOPRANO - SAX TENOR
@@ -108,14 +159,26 @@
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
     
-    b1
+    <<
+      {b1^"Tu"}
+      \\
+      {s_"1 2 3 4"}
+    >>
     R
-    b
+    <<
+      {b^"Tu"}
+      \\
+      {s_"1 2 3 4"}
+    >>
     R
-    b
+    <<
+      {b^"Tu"}
+      \\
+      {s_"1 2 3 4"}
+    >>
     R
-    b
-    b
+    b^"Tu"
+    b^"Tu"
   }
 
   %% FAGOTE - FLAUTA DOCE BAIXO
@@ -126,14 +189,26 @@
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
     
-    d1
+    <<
+      {d1^"Tu"}
+      \\
+      {s_"1 2 3 4"}
+    >>
     R
-    d
+    <<
+      {d^"Tu"}
+      \\
+      {s_"1 2 3 4"}
+    >>
     R
-    d
+    <<
+      {d^"Tu"}
+      \\
+      {s_"1 2 3 4"}
+    >>
     R
-    d
-    d
+    d^"Tu"
+    d^"Tu"
   }
 
   %% SAX HORN
@@ -143,14 +218,26 @@
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
     
-    fis1
+     <<
+      {fis1^"Tu"}
+      \\
+      {s_"1 2 3 4"}
+    >>
     R
-    fis
+    <<
+      {fis^"Tu"}
+      \\
+      {s_"1 2 3 4"}
+    >>
     R
-    fis
+    <<
+      {fis^"Tu"}
+      \\
+      {s_"1 2 3 4"}
+    >>
     R
-    fis
-    fis
+    fis^"Tu"
+    fis^"Tu"
   }
 
   %% TROMPA
@@ -160,14 +247,26 @@
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
     
-    e1
+    <<
+      {e1^"Tu"}
+      \\
+      {s_"1 2 3 4"}
+    >>
     R
-    e
+    <<
+      {e^"Tu"}
+      \\
+      {s_"1 2 3 4"}
+    >>
     R
-    e
+    <<
+      {e^"Tu"}
+      \\
+      {s_"1 2 3 4"}
+    >>
     R
-    e
-    e
+    e^"Tu"
+    e^"Tu"
   }
 
   %% TROMPETE - BOMBARDINO EM CLAVE DE SOL
@@ -177,14 +276,26 @@
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
     
-    e1
+    <<
+      {e1^"Tu"}
+      \\
+      {s_"1 2 3 4"}
+    >>
     R
-    e
+    <<
+      {e^"Tu"}
+      \\
+      {s_"1 2 3 4"}
+    >>
     R
-    e
+    <<
+      {e^"Tu"}
+      \\
+      {s_"1 2 3 4"}
+    >>
     R
-    e
-    e
+    e^"Tu"
+    e^"Tu"
   }
 
   %% TROMBONE - BOMBARDINO
@@ -195,14 +306,26 @@
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
     
-    d1
+  <<
+      {d1^"Tu"}
+      \\
+      {s_"1 2 3 4"}
+    >>
     R
-    d
+    <<
+      {d^"Tu"}
+      \\
+      {s_"1 2 3 4"}
+    >>
     R
-    d
+    <<
+      {d^"Tu"}
+      \\
+      {s_"1 2 3 4"}
+    >>
     R
-    d
-    d
+    d^"Tu"
+    d^"Tu"
   }
 
   %% TUBA
@@ -213,14 +336,26 @@
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
     
-    d,1
+  <<
+      {d1^"Tu"}
+      \\
+      {s_"1 2 3 4"}
+    >>
     R
-    d
+    <<
+      {d^"Tu"}
+      \\
+      {s_"1 2 3 4"}
+    >>
     R
-    d
+    <<
+      {d^"Tu"}
+      \\
+      {s_"1 2 3 4"}
+    >>
     R
-    d
-    d
+    d^"Tu"
+    d^"Tu"
   }
 
   %% PIANO - ACORDEÃO
@@ -233,7 +368,15 @@
           \time 4/4 
           \override Score.BarNumber #'transparent = ##t
           \override Score.RehearsalMark #'font-size = #-2
-          f8 e4 d8 d f e4
+
+          a4_"1" a_"2" a_"3" a_"4"
+          R1
+          a4_"1" a_"2" a_"3" a_"4"
+          R1
+          a4_"1" a_"2" a_"3" a_"4"
+          R1
+          a4 a a a
+          a a a a
         }
       }
       \new Staff {
@@ -243,7 +386,7 @@
           \override Score.BarNumber #'transparent = ##t
           \override Score.RehearsalMark #'font-size = #-2
           \clef bass
-          f8 e4 d8 d f e4
+          R1 R R R R R R R
         }
       }
     >>
@@ -254,10 +397,14 @@
   \tag #'per {
     \new DrumStaff <<
       \drummode {
+        \override Staff.TimeSignature #'style = #'()
+        \time 4/4 
+        \override Score.BarNumber #'transparent = ##t
+        \override Score.RehearsalMark #'font-size = #-2
         <<
           {
             \stemUp
-            sn4 sn sn sn
+            sn4^"D"_"1" sn^"E" sn^"D" sn^"E"
             sn sn sn sn
             sn sn sn sn
             sn sn sn sn
