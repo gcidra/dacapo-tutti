@@ -83,7 +83,7 @@ clarineta-clarone.lytex: $(file) Makefile
 	-e 's/%#nota-01#%/Ré/g' \
 	-e 's/%#nota-02#%/Si/g' \
 	-e 's/%#casa1e2#%/clave-sol-casa1e2/g' \
-	-e "s/transpose c c/transpose c c/g" $< > $@
+	-e "s/transpose c c/transpose c c,/g" $< > $@
 
 saxAlto-saxBaritono.lytex: $(file) Makefile
 	sed -e "s/keepWithTag #'fl/\keepWithTag #'sxab/g" \
@@ -122,7 +122,7 @@ fagote-flautaDoceBaixo.lytex: $(file) Makefile
 	-e 's/%#nota-01#%/Ré/g' \
 	-e 's/%#nota-02#%/Si/g' \
 	-e 's/%#casa1e2#%/clave-fa-casa1e2/g' \
-	-e "s/transpose c c/transpose c c/g" $< > $@
+	-e "s/transpose c c/transpose c c,,/g" $< > $@
 
 saxHorn.lytex: $(file) Makefile
 	sed -e "s/keepWithTag #'fl/\keepWithTag #'sxh/g" \
@@ -135,7 +135,7 @@ saxHorn.lytex: $(file) Makefile
 	-e 's/%#nota-01#%/Ré/g' \
 	-e 's/%#nota-02#%/Si/g' \
 	-e 's/%#casa1e2#%/clave-sol-casa1e2/g' \
-	-e "s/transpose c c/transpose c c/g" $< > $@
+	-e "s/transpose c c/transpose c c,/g" $< > $@
 
 trompa.lytex: $(file) Makefile
 	sed -e "s/keepWithTag #'fl/\keepWithTag #'tpa/g" \
@@ -148,7 +148,7 @@ trompa.lytex: $(file) Makefile
 	-e 's/%#nota-01#%/Ré/g' \
 	-e 's/%#nota-02#%/Si/g' \
 	-e 's/%#casa1e2#%/clave-sol-casa1e2/g' \
-	-e "s/transpose c c/transpose c c/g" $< > $@
+	-e "s/transpose c c/transpose c c,/g" $< > $@
 
 trompete-bombardinoClaveDeSol.lytex: $(file) Makefile
 	sed -e "s/keepWithTag #'fl/\keepWithTag #'tpt/g" \
@@ -161,7 +161,7 @@ trompete-bombardinoClaveDeSol.lytex: $(file) Makefile
 	-e 's/%#nota-01#%/Ré/g' \
 	-e 's/%#nota-02#%/Si/g' \
 	-e 's/%#casa1e2#%/clave-sol-casa1e2/g' \
-	-e "s/transpose c c/transpose c c/g" $< > $@
+	-e "s/transpose c c/transpose c c,/g" $< > $@
 
 trombone-bombardino.lytex: $(file) Makefile
 	sed -e "s/keepWithTag #'fl/\keepWithTag #'tbn/g" \
@@ -174,7 +174,7 @@ trombone-bombardino.lytex: $(file) Makefile
 	-e 's/%#nota-01#%/Ré/g' \
 	-e 's/%#nota-02#%/Si/g' \
 	-e 's/%#casa1e2#%/clave-fa-casa1e2/g' \
-	-e "s/transpose c c/transpose c c/g" $< > $@
+	-e "s/transpose c c/transpose c c,,/g" $< > $@
 
 tuba.lytex: $(file) Makefile
 	sed -e "s/keepWithTag #'fl/\keepWithTag #'tba/g" \
@@ -187,7 +187,7 @@ tuba.lytex: $(file) Makefile
 	-e 's/%#nota-01#%/Ré/g' \
 	-e 's/%#nota-02#%/Si/g' \
 	-e 's/%#casa1e2#%/clave-fa-casa1e2/g' \
-	-e "s/transpose c c/transpose c c/g" $< > $@
+	-e "s/transpose c c/transpose c c,,,/g" $< > $@
 
 piano-acordeao.lytex: $(file) Makefile
 	sed -e "s/keepWithTag #'fl/\keepWithTag #'pn/g" \
@@ -200,7 +200,7 @@ piano-acordeao.lytex: $(file) Makefile
 	-e 's/%#nota-01#%/Ré/g' \
 	-e 's/%#nota-02#%/Si/g' \
 	-e 's/%#casa1e2#%/clave-sol-casa1e2/g' \
-	-e "s/transpose c c/transpose c c/g" $< > $@
+	-e "s/transpose c c/transpose c c'/g" $< > $@
 
 percussao.lytex: $(file) Makefile
 	sed -e "s/keepWithTag #'fl/\keepWithTag #'per/g" \
@@ -245,7 +245,7 @@ violao-violaMachete.lytex: $(file) Makefile
 	-e 's/%#nota-01#%/Mi/g' \
 	-e 's/%#nota-02#%/Lá/g' \
 	-e 's/%#casa1e2#%/clave-sol-casa1e2/g' \
-	-e "s/transpose c c/transpose c c/g" $< > $@
+	-e "s/transpose c c/transpose c c,,/g" $< > $@
 
 violino-bandolim-rabeca.lytex: $(file) Makefile
 	sed -e "s/keepWithTag #'fl/\keepWithTag #'vn/g" \
@@ -264,7 +264,7 @@ violino-bandolim-rabeca.lytex: $(file) Makefile
 	-e "s/transpose c c/transpose c c/g" $< > $@
 
 viola-violaoTenor.lytex: $(file) Makefile
-	sed -e "s/keepWithTag #'cv/\keepWithTag #'vla/g" \
+	sed -e "s/keepWithTag #'fl/\keepWithTag #'vla/g" \
 	-e 's/instrumento{InstrCapa}/instrumento{Viola - Violão Tenor}/g' \
 	-e 's/instrumento{Original}/instrumento{Viola - Violão Tenor}/g' \
 	-e 's/instrumento{Rodape}/instrumento{Viola - Violão Tenor}/g' \
@@ -277,7 +277,7 @@ viola-violaoTenor.lytex: $(file) Makefile
 	-e 's/%#nota-01#%/Mi/g' \
 	-e 's/%#nota-02#%/Si/g' \
 	-e 's/%#casa1e2#%/clave-sol-casa1e2/g' \
-	-e "s/transpose c c/transpose c c/g" $< > $@
+	-e "s/transpose c c/transpose c c,/g" $< > $@
 
 violoncelo.lytex: $(file) Makefile
 	sed -e "s/keepWithTag #'fl/\keepWithTag #'vc/g" \
@@ -293,7 +293,7 @@ violoncelo.lytex: $(file) Makefile
 	-e 's/%#nota-01#%/Lá/g' \
 	-e 's/%#nota-02#%/Ré/g' \
 	-e 's/%#casa1e2#%/clave-fa8-casa1e2/g' \
-	-e "s/transpose c c/transpose c c/g" $< > $@
+	-e "s/transpose c c/transpose c c,,/g" $< > $@
 
 baixo-baixoEletrico.lytex: $(file) Makefile
 	sed -e "s/keepWithTag #'fl/\keepWithTag #'bx/g" \
@@ -309,7 +309,7 @@ baixo-baixoEletrico.lytex: $(file) Makefile
 	-e 's/%#nota-01#%/Sol/g' \
 	-e 's/%#nota-02#%/Ré/g' \
 	-e 's/%#casa1e2#%/clave-fa-casa1e2/g' \
-	-e "s/transpose c c/transpose c c/g" $< > $@
+	-e "s/transpose c c/transpose c c,,/g" $< > $@
 
 %.reg: %.ly
 	clisp scripts/remove-bloco.lisp $< reg/$@
