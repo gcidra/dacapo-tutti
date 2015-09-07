@@ -581,6 +581,18 @@ o site:
 \end{lilypond}
 
 
+\section{Mínimas}
+\label{sec:minimas}
+
+\begin{lilypond}[line-width=17\cm]
+  \transpose c c {
+    \keepWithTag #'fl
+    \include "tt-002.ly"
+  }
+\end{lilypond}
+
+
+
 
 %%%%% FINAL DAS LIÇÕES DA VERSÃO 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
