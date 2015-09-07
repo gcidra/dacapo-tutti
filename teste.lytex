@@ -96,13 +96,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
 
-\section{Quatro por Um}
-\label{sec:quatro-por-um}
+\section{Mínimas}
+\label{sec:minimas}
 
 \begin{lilypond}[line-width=17\cm]
   \transpose c c {
     \keepWithTag #'fl
-    \include "tt-001.ly"
+    \include "tt-002.ly"
   }
 \end{lilypond}
 
