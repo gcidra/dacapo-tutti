@@ -591,7 +591,15 @@ o site:
   }
 \end{lilypond}
 
+\section{Mínimas e Semínimas}
+\label{sec:minimas-seminimas}
 
+\begin{lilypond}[line-width=17\cm]
+  \transpose c c {
+    \keepWithTag #'fl
+    \include "tt-003.ly"
+  }
+\end{lilypond}
 
 
 %%%%% FINAL DAS LIÇÕES DA VERSÃO 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
