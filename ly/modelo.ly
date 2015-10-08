@@ -159,14 +159,14 @@
         <<
           {
             \stemUp
-            %% Caixa
+            %% Caixa ( sn )
 
 
           }
           \\
           {
             \stemDown
-            %% Bombo
+            %% Bombo ( bd )
 
             
           }
@@ -175,25 +175,82 @@
     >>
   }
   
-  %% CAVAQUINHO - BANJO - VIOLAS CAIPIRA E DE COCHO
+  %% CAVAQUINHO - BANJO - VIOLA CAIPIRA
   \tag #'cv {
-    \override Staff.TimeSignature #'style = #'()
-    \time 4/4 
-    \override Score.BarNumber #'transparent = ##t
-    \override Score.RehearsalMark #'font-size = #-2
+    <<
+      \chords {
+        
+      }
 
+      %% notas
+      {
+        \override Staff.TimeSignature #'style = #'()
+        \time 4/4 
+        \override Score.BarNumber #'transparent = ##t
+        \override Score.RehearsalMark #'font-size = #-2
+
+        
+      }
+    >>
     
   }
 
-  %% VIOLÃO - VIOLA MANCHETE
-  \tag #'vlao {
-    \clef "G_8"
-    \override Staff.TimeSignature #'style = #'()
-    \time 4/4 
-    \override Score.BarNumber #'transparent = ##t
-    \override Score.RehearsalMark #'font-size = #-2
+  %% VIOLA MACHETE
+  \tag #'vlam {
+    <<
+      \chords {
+        
+      }
 
-    
+      %% notas
+      {
+        \override Staff.TimeSignature #'style = #'()
+        \time 4/4 
+        \override Score.BarNumber #'transparent = ##t
+        \override Score.RehearsalMark #'font-size = #-2
+
+        
+      }
+    >>
+  }
+
+  %% VIOLA DE COCHO
+  \tag #'vlaco {
+    <<
+      \chords {
+        
+      }
+
+      %% notas
+      {
+        \override Staff.TimeSignature #'style = #'()
+        \time 4/4 
+        \override Score.BarNumber #'transparent = ##t
+        \override Score.RehearsalMark #'font-size = #-2
+
+        
+      }
+    >>
+  }
+
+  %% VIOLÃO
+  \tag #'vlao {
+    <<
+      \chords {
+        
+      }
+
+      %% notas
+      {
+        \clef "G_8"
+        \override Staff.TimeSignature #'style = #'()
+        \time 4/4 
+        \override Score.BarNumber #'transparent = ##t
+        \override Score.RehearsalMark #'font-size = #-2
+
+        
+      }
+    >>
   }
 
   %% VIOLINO - BANDOLIM 1 E 2 - RABECA
