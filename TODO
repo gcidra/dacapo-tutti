@@ -5,9 +5,8 @@
   correto? (a princípio, coloquei as notas da lição anterior com a
   mudança para mínima.
 
-- Várias dúvidas na lição 2
+- As notas da trompa e do sax horn estão corretas na lição 3?
 
-- é melhor separar as violas do violão e do cavaquinho?
 
 * Tarefas
 ** Realizadas
@@ -77,44 +76,69 @@ c:4-3-2 = pestana na corda 4 até a 3 na casa 2
 <c-\RH #4 >4
 
 * Livros em geral
+** LIVROS bash - Alias
+-> flauta
+-> oboe
+-> flautaDoceContralto
+-> clarineta
+-> saxalto
+-> saxsoprano
+-> fagote
+-> saxhorn
+-> trompa
+-> trompete
+-> trombone
+-> tuba
+-> piano
+-> percussao
+-> cavaquinho
+-> violaMachete
+-> violaCocho
+-> violao
+-> violaotenor1
+-> violino
+-> viola
+-> violoncelo
+-> contrabaixo
+
 ** códigos bash - Alias
-flauta
-gaita
-escaleta
-oboe
-flautaDoceSoprano
-flautaDoceContralto
-flautaDoceBaixo
-clarineta
-clarone
-saxalto
-saxbaritono
-saxsoprano
-saxtenor
-fagote
-saxhorn
-trompa
-trompete
-bombardinoClaveSol
-trombone
-bombardinoClaveFa
-tuba
-piano
-acordeao
-percussao
-cavaquinho
-bandolim
-rabeca
-banjo
-violaCaipira
-violaMachete
-violaCocho
-violao
-violaotenor
-violino
-viola
-violoncelo
-contrabaixo
+-> flauta
+   gaita
+   escaleta
+-> oboe
+   flautaDoceSoprano
+-> flautaDoceContralto
+   flautaDoceBaixo
+-> clarineta
+   clarone
+-> saxalto
+   saxbaritono
+-> saxsoprano
+   saxtenor
+-> fagote
+-> saxhorn
+-> trompa
+-> trompete
+   bombardinoClaveSol
+-> trombone
+   bombardinoClaveFa
+-> tuba
+-> piano
+   acordeao
+-> percussao
+-> cavaquinho
+   bandolim
+   rabeca
+   banjo
+   violaCaipira
+-> violaMachete
+-> violaCocho
+-> violao
+-> violaotenor
+-> violino
+-> viola
+-> violoncelo
+-> contrabaixo
 
 ** códigos PDF - Makefile
 *** regencia
