@@ -201,7 +201,7 @@
     b1
   }
 
-  %% SAX SOPRANO - SAX TENOR
+  %% SAX TENOR - SAX SOPRANO
   \tag #'sxst {
     \override Staff.TimeSignature #'style = #'()
     \time 4/4 
@@ -610,7 +610,7 @@
     >>
   }
   
-  %% CAVAQUINHO - BANJO - VIOLA CAIPIRA
+  %% CAVAQUINHO - BANJO
   \tag #'cv {
     <<
       \chords {
@@ -656,13 +656,12 @@
         d g
         d4 g d g
         d1
-
         
       }
     >>
   }
 
-  %% VIOLA MANCHETE
+  %% VIOLA MACHETE
   \tag #'vlam {
     <<
       \chords {
@@ -688,7 +687,7 @@
         \override Score.RehearsalMark #'font-size = #-2
 
         \override TextScript #'padding = #2
-        g2_"1 2" d_"3 4"
+        g'2_"1 2" d_"3 4"
         a''1_"1234"
 
         g,4_"1" d_"2" g_"3" d_"4"
@@ -739,7 +738,7 @@
         \override Score.RehearsalMark #'font-size = #-2
 
         \override TextScript #'padding = #2
-        g2_"1 2" d'_"3 4"
+        g,,2_"1 2" d'_"3 4"
         a1_"1234"
 
         g4_"1" d'_"2" g,_"3" d'_"4"
@@ -764,8 +763,8 @@
     >>
   }
 
-  %% VIOLÃO
-  \tag #'vlao {
+  %% VIOLA CAIPIRA
+  \tag #'vlaca {
     <<
       \chords {
         g1
@@ -785,7 +784,6 @@
 
       %% notas
       {
-        \clef "G_8"
         \override Staff.TimeSignature #'style = #'()
         \time 4/4 
         \override Score.BarNumber #'transparent = ##t
@@ -811,11 +809,62 @@
         d g
         d4 g d g
         d1
-
         
       }
     >>
   }
+
+  %% BANDOLIM 1 - GUITARRA BAIANA
+  \tag #'bd {
+    <<
+      \chords {
+        g1
+        d
+        g
+        d
+
+        g g
+        d d d s
+        g s
+
+        d2 g
+        d g
+        d4 g d g
+        d1
+      }
+
+      %% notas
+      {
+        \override Staff.TimeSignature #'style = #'()
+        \time 4/4 
+        \override Score.BarNumber #'transparent = ##t
+        \override Score.RehearsalMark #'font-size = #-2
+
+        \override TextScript #'padding = #2
+        g2_"1 2" d'_"3 4"
+        a'1_"1234"
+        g,4_"1" d'_"2" g,_"3" d'_"4"
+        
+        a'1
+        
+        d,4 g,2 d'4
+        g, d'2 d4
+        a'1
+        
+        R1*3
+        
+        a4 d, g, d'
+        a' d, g, d'
+        
+        a'2 g,
+        a' g,
+        a'4 g, a' g,
+        a'1
+        
+      }
+    >>
+  }
+
 
   %% VIOLÃO TENOR 1
   \tag #'vlaot {
@@ -871,18 +920,73 @@
     
   }
 
+  %% VIOLÃO - GUITARRA
+  \tag #'vlao {
+    <<
+      \chords {
+        g1
+        d
+        g
+        d
+
+        g g
+        d d d s
+        g s
+
+        d2 g
+        d g
+        d4 g d g
+        d1
+      }
+
+      %% notas
+      {
+        \clef "G_8"
+        \override Staff.TimeSignature #'style = #'()
+        \time 4/4 
+        \override Score.BarNumber #'transparent = ##t
+        \override Score.RehearsalMark #'font-size = #-2
+
+        \override TextScript #'padding = #2
+        g2_"1 2" d_"3 4"
+        d1_"1234"
+
+        g4_"1" d_"2" g_"3" d_"4"
+        d1
+
+        d4 g2 d4
+        g d2 d4
+        d1
+
+        R1*3
+
+        d4 d g d
+        d d g d
+
+        d2 g
+        d g
+        d4 g d g
+        d1
+
+        
+      }
+    >>
+  }
+
+
   
-  %% VIOLINO - BANDOLIM 1 E 2 - RABECA
+  %% VIOLINO - BANDOLIM 2 - RABECA
   \tag #'vn {
     \override Staff.TimeSignature #'style = #'()
     \time 4/4 
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
 
-    g,,2_"1 2"^\markup {\italic pizz.}
+    g,2_"1 2"^\markup {\italic pizz.}
 
     \override TextScript #'padding = #3
-    d'_"3 4"  a'1_"1234"
+    d'_"3 4"
+    a'1_"1234"
     g,4_"1" d'_"2" g,_"3" d'_"4"
 
     \override TextScript #'padding = #0
@@ -904,7 +1008,7 @@
     
   }
   
-  %% VIOLA - VIOLÃO TENOR
+  %% VIOLA - VIOLÃO TENOR 2
   \tag #'vla {
     \clef alto
     \override Staff.TimeSignature #'style = #'()
@@ -912,10 +1016,11 @@
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
 
-    g2_"1 2"^\markup {\italic pizz.}
+    g,2_"1 2"^\markup {\italic pizz.}
 
     \override TextScript #'padding = #1
-    d'_"3 4"  a'1_"1234"
+    d'_"3 4"
+    a'1_"1234"
     g,4_"1" d'_"2" g,_"3" d'_"4"
 
     \override TextScript #'padding = #0
@@ -970,7 +1075,7 @@
     
   }
 
-  %% CONTRABAIXO - BAIXO ELÉTRICO
+  %% CONTRABAIXO - BAIXO ELÉTRICO - BAIXOLÃO
   \tag #'bx {
     \clef bass
     \override Staff.TimeSignature #'style = #'()
