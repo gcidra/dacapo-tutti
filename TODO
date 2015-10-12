@@ -7,6 +7,7 @@
 
 - As notas da trompa e do sax horn estão corretas na lição 3?
 
+- Qual a clave da viola de cocho? Dó ou Sol?
 
 * Tarefas
 ** Realizadas
@@ -77,29 +78,31 @@ c:4-3-2 = pestana na corda 4 até a 3 na casa 2
 
 * Livros em geral
 ** LIVROS bash - Alias
--> flauta
--> oboe
--> flautaDoceContralto
--> clarineta
--> saxalto
--> saxsoprano
--> fagote
--> saxhorn
--> trompa
--> trompete
--> trombone
--> tuba
--> piano
--> percussao
--> cavaquinho
--> violaMachete
--> violaCocho
--> violao
--> violaotenor1
--> violino
--> viola
--> violoncelo
--> contrabaixo
+flauta
+oboe
+flautadocecontralto 
+clarineta
+saxalto
+saxtenor
+fagote
+saxhorn 
+trompa 
+trompete
+trombone
+tuba 
+piano
+percussao 
+cavaquinho
+violamachete 
+violacocho 
+violacaipira 
+bandolim1
+violaotenor1 
+violao
+violino
+viola
+violoncelo 
+baixo
 
 ** códigos bash - Alias
 -> flauta
