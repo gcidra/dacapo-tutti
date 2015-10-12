@@ -458,7 +458,7 @@
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
     
-    d,4_"1" d_"2" d_"3" d_"4"
+    d4_"1" d_"2" d_"3" d_"4"
     R1
     d4_"1" d_"2" d_"3" d_"4"
     R1
@@ -475,7 +475,7 @@
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
     
-    d''4_"1" d_"2" d_"3" d_"4"
+    d4_"1" d_"2" d_"3" d_"4"
     R1
     d4_"1" d_"2" d_"3" d_"4"
     R1
@@ -492,7 +492,7 @@
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
     
-    d,4_"1" d_"2" d_"3" d_"4"
+    d4_"1" d_"2" d_"3" d_"4"
     R1
     d4_"1" d_"2" d_"3" d_"4"
     R1
@@ -503,13 +503,13 @@
   }
 
   %% BANDOLIM 1 - GUITARRA BAIANA
-  \tag #'bn {
+  \tag #'bd {
     \override Staff.TimeSignature #'style = #'()
     \time 4/4 
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
     
-    d,4_"1" d_"2" d_"3" d_"4"
+    d4_"1" d_"2" d_"3" d_"4"
     R1
     d4_"1" d_"2" d_"3" d_"4"
     R1
@@ -529,7 +529,7 @@
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
     
-    d'4_"1" d_"2" d_"3" d_"4"
+    d4_"1" d_"2" d_"3" d_"4"
     R1
     d4_"1" d_"2" d_"3" d_"4"
     R1
@@ -564,7 +564,7 @@
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
     
-    d,4^\markup {\italic pizz.}_"1" d_"2" d_"3" d_"4"
+    d4^\markup {\italic pizz.}_"1" d_"2" d_"3" d_"4"
     R1
     d4_"1" d_"2" d_"3" d_"4"
     R1
@@ -583,7 +583,7 @@
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
     
-    d'4^\markup {\italic pizz.}_"1" d_"2" d_"3" d_"4"
+    d4^\markup {\italic pizz.}_"1" d_"2" d_"3" d_"4"
     R1
     d4_"1" d_"2" d_"3" d_"4"
     R1

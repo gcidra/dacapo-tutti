@@ -245,7 +245,7 @@ violaMachete.lytex: $(file) Makefile
 	-e 's/%#nota-01#%/Mi/g' \
 	-e 's/%#nota-02#%/Lá/g' \
 	-e 's/%#casa1e2#%/clave-sol-casa1e2/g' \
-	-e "s/transpose c c/transpose c c/g" $< > $@
+	-e "s/transpose c c/transpose c c,/g" $< > $@
 
 violaCocho.lytex: $(file) Makefile
 	sed -e "s/keepWithTag #'fl/\keepWithTag #'vlaco/g" \
@@ -261,7 +261,7 @@ violaCocho.lytex: $(file) Makefile
 	-e 's/%#nota-01#%/Ré/g' \
 	-e 's/%#nota-02#%/Si/g' \
 	-e 's/%#casa1e2#%/clave-sol-casa1e2/g' \
-	-e "s/transpose c c/transpose c c,/g" $< > $@
+	-e "s/transpose c c/transpose c c/g" $< > $@
 
 violaCaipira.lytex: $(file) Makefile
 	sed -e "s/keepWithTag #'fl/\keepWithTag #'vlaca/g" \
@@ -280,7 +280,7 @@ violaCaipira.lytex: $(file) Makefile
 	-e "s/transpose c c/transpose c c/g" $< > $@
 
 bandolim1-guitarraBaiana.lytex: $(file) Makefile
-	sed -e "s/keepWithTag #'fl/\keepWithTag #'bn/g" \
+	sed -e "s/keepWithTag #'fl/\keepWithTag #'bd/g" \
 	-e 's/instrumento{InstrCapa}/instrumento{Bandolim 1 - Guitarra Baiana}/g' \
 	-e 's/instrumento{Original}/instrumento{Bandolim 1 - Guitarra Baiana}/g' \
 	-e 's/instrumento{Rodape}/instrumento{Bandolim 1 - Guitarra Baiana}/g' \
@@ -293,7 +293,7 @@ bandolim1-guitarraBaiana.lytex: $(file) Makefile
 	-e 's/%#nota-01#%/Ré/g' \
 	-e 's/%#nota-02#%/Si/g' \
 	-e 's/%#casa1e2#%/clave-sol-casa1e2/g' \
-	-e "s/transpose c c/transpose c c/g" $< > $@
+	-e "s/transpose c c/transpose c c,/g" $< > $@
 
 violaoTenor1.lytex: $(file) Makefile
 	sed -e "s/keepWithTag #'fl/\keepWithTag #'vlaot/g" \
@@ -341,7 +341,7 @@ violino-bandolim2-rabeca.lytex: $(file) Makefile
 	-e 's/%#nota-01#%/Mi/g' \
 	-e 's/%#nota-02#%/Lá/g' \
 	-e 's/%#casa1e2#%/clave-sol-casa1e2/g' \
-	-e "s/transpose c c/transpose c c/g" $< > $@
+	-e "s/transpose c c/transpose c c,/g" $< > $@
 
 viola-violaoTenor2.lytex: $(file) Makefile
 	sed -e "s/keepWithTag #'fl/\keepWithTag #'vla/g" \
