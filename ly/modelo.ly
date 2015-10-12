@@ -253,6 +253,26 @@
     >>
   }
 
+    %% VIOLÃO TENOR 1
+  \tag #'vlaot {
+    <<
+      \chords {
+        
+      }
+
+      %% notas
+      {
+        \clef "G_8"
+        \override Staff.TimeSignature #'style = #'()
+        \time 4/4 
+        \override Score.BarNumber #'transparent = ##t
+        \override Score.RehearsalMark #'font-size = #-2
+
+        
+      }
+    >>
+  }
+
   %% VIOLINO - BANDOLIM 1 E 2 - RABECA
   \tag #'vn {
     \override Staff.TimeSignature #'style = #'()
@@ -263,7 +283,7 @@
 
   }
 
-  %% VIOLA - VIOLÃO TENOR
+  %% VIOLA
   \tag #'vla {
     \clef alto
     \override Staff.TimeSignature #'style = #'()
