@@ -817,6 +817,61 @@
     >>
   }
 
+  %% VIOLÃO TENOR 1
+  \tag #'vlaot {
+    <<
+      \chords {
+        g1
+        d
+        g
+        d
+        
+        g g
+        d d d s
+        g s
+
+        d2 g
+        d g
+        d4 g d g
+        d1
+      }
+
+      %% notas
+      {
+        \clef "G_8"
+        \override Staff.TimeSignature #'style = #'()
+        \time 4/4 
+        \override Score.BarNumber #'transparent = ##t
+        \override Score.RehearsalMark #'font-size = #-2
+        
+        g,2_"1 2"
+        
+        \override TextScript #'padding = #1
+        d'_"3 4"  a'1_"1234"
+        g,4_"1" d'_"2" g,_"3" d'_"4"
+        
+        \override TextScript #'padding = #0
+        a'1
+        
+        d,4 g,2 d'4
+        g, d'2 d4
+        a'1
+        
+        R1*3
+        
+        a4 d, g, d'
+        a' d, g, d'
+        
+        a'2 g,
+        a' g,
+        a'4 g, a' g,
+        a'1
+      }
+    >>
+    
+  }
+
+  
   %% VIOLINO - BANDOLIM 1 E 2 - RABECA
   \tag #'vn {
     \override Staff.TimeSignature #'style = #'()
