@@ -11,7 +11,8 @@
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
     
-
+    %%notas
+    
   }
 
   %% OBOÉ - FLAUTA DOCE SOPRANO
@@ -21,6 +22,7 @@
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
     
+    %%notas
 
   }
 
@@ -31,6 +33,8 @@
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
     
+    %%notas
+    
   }
 
   %% CLARINETA - CLARONE
@@ -40,6 +44,8 @@
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
     
+    %%notas
+
   }
 
   %% SAX ALTO - SAX BARÍTONO
@@ -49,14 +55,18 @@
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
     
+    %%notas
+
   }
 
-  %% SAX SOPRANO - SAX TENOR
+  %% SAX TENOR - SAX SOPRANO
   \tag #'sxst {
     \override Staff.TimeSignature #'style = #'()
     \time 4/4 
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
+    
+    %%notas
     
   }
 
@@ -68,6 +78,8 @@
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
     
+    %%notas
+    
   }
 
   %% SAX HORN
@@ -76,6 +88,8 @@
     \time 4/4 
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
+    
+    %%notas
     
   }
 
@@ -86,6 +100,8 @@
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
     
+    %%notas
+    
   }
 
   %% TROMPETE - BOMBARDINO EM CLAVE DE SOL
@@ -94,6 +110,8 @@
     \time 4/4 
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
+    
+    %%notas
     
   }
 
@@ -105,6 +123,8 @@
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
     
+    %%notas
+    
   }
 
   %% TUBA
@@ -115,35 +135,46 @@
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
     
+    %%notas
+    
   }
 
   %% PIANO - ACORDEÃO
   \tag #'pn {
-
-    \new PianoStaff <<
-      \new Staff {
-        \relative c' {
-          \override Staff.TimeSignature #'style = #'()
-          \time 4/4 
-          \override Score.BarNumber #'transparent = ##t
-          \override Score.RehearsalMark #'font-size = #-2
-          %% MD
-          
-        }
+    <<
+      \chords {
+        %% acordes
+        
       }
-      \new Staff {
-        \relative c {
-          \override Staff.TimeSignature #'style = #'()
-          \time 4/4 
-          \override Score.BarNumber #'transparent = ##t
-          \override Score.RehearsalMark #'font-size = #-2
-          \clef bass
-          %% ME
+      {
+        \new PianoStaff <<
+          \new Staff {
+            \relative c' {
+              \override Staff.TimeSignature #'style = #'()
+              \time 4/4 
+              \override Score.BarNumber #'transparent = ##t
+              \override Score.RehearsalMark #'font-size = #-2
+              %% notas MD
+
           
-        }
+            }
+          }
+          \new Staff {
+            \relative c {
+              \override Staff.TimeSignature #'style = #'()
+              \time 4/4 
+              \override Score.BarNumber #'transparent = ##t
+              \override Score.RehearsalMark #'font-size = #-2
+              \clef bass
+              %% notas ME
+              
+            }
+          }
+        >>
       }
     >>
   }
+
 
   %% PERCUSSÃO
   \tag #'per {
@@ -159,131 +190,113 @@
         <<
           {
             \stemUp
-            %% Caixa ( sn )
-
-
+            %% Notas Caixa - sn
+            
           }
           \\
           {
             \stemDown
-            %% Bombo ( bd )
-
+            %% Notas Bombo - bd
             
+
           }
         >>
       }
     >>
   }
   
-  %% CAVAQUINHO - BANJO - VIOLA CAIPIRA
+  %% CAVAQUINHO - BANJO
   \tag #'cv {
-    <<
-      \chords {
-        
-      }
+    \override Staff.TimeSignature #'style = #'()
+    \time 4/4 
+    \override Score.BarNumber #'transparent = ##t
+    \override Score.RehearsalMark #'font-size = #-2
 
-      %% notas
-      {
-        \override Staff.TimeSignature #'style = #'()
-        \time 4/4 
-        \override Score.BarNumber #'transparent = ##t
-        \override Score.RehearsalMark #'font-size = #-2
+    %%notas
 
-        
-      }
-    >>
-    
   }
 
   %% VIOLA MACHETE
   \tag #'vlam {
-    <<
-      \chords {
-        
-      }
-
-      %% notas
-      {
-        \override Staff.TimeSignature #'style = #'()
-        \time 4/4 
-        \override Score.BarNumber #'transparent = ##t
-        \override Score.RehearsalMark #'font-size = #-2
-
-        
-      }
-    >>
+    \override Staff.TimeSignature #'style = #'()
+    \time 4/4 
+    \override Score.BarNumber #'transparent = ##t
+    \override Score.RehearsalMark #'font-size = #-2
+    
+    %%notas
+    
   }
 
   %% VIOLA DE COCHO
   \tag #'vlaco {
-    <<
-      \chords {
-        
-      }
-
-      %% notas
-      {
-        \override Staff.TimeSignature #'style = #'()
-        \time 4/4 
-        \override Score.BarNumber #'transparent = ##t
-        \override Score.RehearsalMark #'font-size = #-2
-
-        
-      }
-    >>
+    \override Staff.TimeSignature #'style = #'()
+    \time 4/4 
+    \override Score.BarNumber #'transparent = ##t
+    \override Score.RehearsalMark #'font-size = #-2
+    
+    %%notas
+    
   }
 
-  %% VIOLÃO
-  \tag #'vlao {
-    <<
-      \chords {
-        
-      }
-
-      %% notas
-      {
-        \clef "G_8"
-        \override Staff.TimeSignature #'style = #'()
-        \time 4/4 
-        \override Score.BarNumber #'transparent = ##t
-        \override Score.RehearsalMark #'font-size = #-2
-
-        
-      }
-    >>
+  %% VIOLA CAIPIRA
+  \tag #'vlaca {
+    \override Staff.TimeSignature #'style = #'()
+    \time 4/4 
+    \override Score.BarNumber #'transparent = ##t
+    \override Score.RehearsalMark #'font-size = #-2
+    
+    %%notas
+    
   }
 
-    %% VIOLÃO TENOR 1
+  %% BANDOLIM 1 - GUITARRA BAIANA
+  \tag #'bd {
+    \override Staff.TimeSignature #'style = #'()
+    \time 4/4 
+    \override Score.BarNumber #'transparent = ##t
+    \override Score.RehearsalMark #'font-size = #-2
+    
+    %%notas
+
+  }
+
+  
+  %% VIOLÃO TENOR 1
   \tag #'vlaot {
-    <<
-      \chords {
-        
-      }
-
-      %% notas
-      {
-        \clef "G_8"
-        \override Staff.TimeSignature #'style = #'()
-        \time 4/4 
-        \override Score.BarNumber #'transparent = ##t
-        \override Score.RehearsalMark #'font-size = #-2
-
-        
-      }
-    >>
+    \clef "G_8"
+    \override Staff.TimeSignature #'style = #'()
+    \time 4/4 
+    \override Score.BarNumber #'transparent = ##t
+    \override Score.RehearsalMark #'font-size = #-2
+    
+    %%notas
+    
   }
 
-  %% VIOLINO - BANDOLIM 1 E 2 - RABECA
+  %% VIOLÃO - GUITARRA
+  \tag #'vlao {
+    \clef "G_8"
+    \override Staff.TimeSignature #'style = #'()
+    \time 4/4 
+    \override Score.BarNumber #'transparent = ##t
+    \override Score.RehearsalMark #'font-size = #-2
+    
+    %%notas
+    
+  }
+
+  %% VIOLINO - BANDOLIM 2 - RABECA
   \tag #'vn {
     \override Staff.TimeSignature #'style = #'()
     \time 4/4 
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
     
+    %%notas
 
   }
 
-  %% VIOLA
+  %% VIOLA - VIOLÃO TENOR 2
   \tag #'vla {
     \clef alto
     \override Staff.TimeSignature #'style = #'()
@@ -291,7 +304,8 @@
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
     
-    
+    %%notas
+
   }
 
   %% VIOLONCELO
@@ -302,10 +316,11 @@
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
     
+    %%notas
     
   }
 
-  %% CONTRABAIXO - BAIXO ELÉTRICO
+  %% CONTRABAIXO - BAIXO ELÉTRICO - BAIXOLÃO
   \tag #'bx {
     \clef bass
     \override Staff.TimeSignature #'style = #'()
@@ -313,8 +328,10 @@
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
     
+    %%notas
     
   }
+
 
   %% END DOCUMENT
   \bar "|."
