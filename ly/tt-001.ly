@@ -152,7 +152,7 @@
 
   }
 
-  %% SAX SOPRANO - SAX TENOR
+  %% SAX TENOR - SAX SOPRANO
   \tag #'sxst {
     \override Staff.TimeSignature #'style = #'()
     \time 4/4 
@@ -434,7 +434,7 @@
     >>
   }
   
-  %% CAVAQUINHO - BANJO - VIOLAS CAIPIRA E DE COCHO
+  %% CAVAQUINHO - BANJO
   \tag #'cv {
     \override Staff.TimeSignature #'style = #'()
     \time 4/4 
@@ -451,7 +451,95 @@
     d d d d
   }
 
-  %% VIOLÃO - VIOLA MANCHETE
+  %% VIOLA MACHETE
+  \tag #'vlam {
+    \override Staff.TimeSignature #'style = #'()
+    \time 4/4 
+    \override Score.BarNumber #'transparent = ##t
+    \override Score.RehearsalMark #'font-size = #-2
+    
+    d,4_"1" d_"2" d_"3" d_"4"
+    R1
+    d4_"1" d_"2" d_"3" d_"4"
+    R1
+    d4_"1" d_"2" d_"3" d_"4"
+    R1
+    d4 d d d
+    d d d d
+  }
+
+  %% VIOLA DE COCHO
+  \tag #'vlaco {
+    \override Staff.TimeSignature #'style = #'()
+    \time 4/4 
+    \override Score.BarNumber #'transparent = ##t
+    \override Score.RehearsalMark #'font-size = #-2
+    
+    d''4_"1" d_"2" d_"3" d_"4"
+    R1
+    d4_"1" d_"2" d_"3" d_"4"
+    R1
+    d4_"1" d_"2" d_"3" d_"4"
+    R1
+    d4 d d d
+    d d d d
+  }
+
+  %% VIOLA CAIPIRA
+  \tag #'vlaca {
+    \override Staff.TimeSignature #'style = #'()
+    \time 4/4 
+    \override Score.BarNumber #'transparent = ##t
+    \override Score.RehearsalMark #'font-size = #-2
+    
+    d,4_"1" d_"2" d_"3" d_"4"
+    R1
+    d4_"1" d_"2" d_"3" d_"4"
+    R1
+    d4_"1" d_"2" d_"3" d_"4"
+    R1
+    d4 d d d
+    d d d d
+  }
+
+  %% BANDOLIM 1 - GUITARRA BAIANA
+  \tag #'bn {
+    \override Staff.TimeSignature #'style = #'()
+    \time 4/4 
+    \override Score.BarNumber #'transparent = ##t
+    \override Score.RehearsalMark #'font-size = #-2
+    
+    d,4_"1" d_"2" d_"3" d_"4"
+    R1
+    d4_"1" d_"2" d_"3" d_"4"
+    R1
+    d4_"1" d_"2" d_"3" d_"4"
+    R1
+    d4 d d d
+    d d d d
+
+  }
+
+  
+  %% VIOLÃO TENOR 1
+  \tag #'vlaot {
+    \clef "G_8"
+    \override Staff.TimeSignature #'style = #'()
+    \time 4/4 
+    \override Score.BarNumber #'transparent = ##t
+    \override Score.RehearsalMark #'font-size = #-2
+    
+    d'4_"1" d_"2" d_"3" d_"4"
+    R1
+    d4_"1" d_"2" d_"3" d_"4"
+    R1
+    d4_"1" d_"2" d_"3" d_"4"
+    R1
+    d4 d d d
+    d d d d
+  }
+
+  %% VIOLÃO - GUITARRA
   \tag #'vlao {
     \clef "G_8"
     \override Staff.TimeSignature #'style = #'()
@@ -469,15 +557,14 @@
     d d d d
   }
 
-
-  %% VIOLINO - BANDOLIM 1 E 2 - RABECA
+  %% VIOLINO - BANDOLIM 2 - RABECA
   \tag #'vn {
     \override Staff.TimeSignature #'style = #'()
     \time 4/4 
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
     
-    d4^\markup {\italic pizz.}_"1" d_"2" d_"3" d_"4"
+    d,4^\markup {\italic pizz.}_"1" d_"2" d_"3" d_"4"
     R1
     d4_"1" d_"2" d_"3" d_"4"
     R1
@@ -488,7 +575,7 @@
 
   }
 
-  %% VIOLA - VIOLÃO TENOR
+  %% VIOLA - VIOLÃO TENOR 2
   \tag #'vla {
     \clef alto
     \override Staff.TimeSignature #'style = #'()
@@ -496,7 +583,7 @@
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
     
-    d4^\markup {\italic pizz.}_"1" d_"2" d_"3" d_"4"
+    d'4^\markup {\italic pizz.}_"1" d_"2" d_"3" d_"4"
     R1
     d4_"1" d_"2" d_"3" d_"4"
     R1
@@ -525,7 +612,7 @@
     d d d d
   }
 
-  %% CONTRABAIXO - BAIXO ELÉTRICO
+  %% CONTRABAIXO - BAIXO ELÉTRICO - BAIXOLÃO
   \tag #'bx {
     \clef bass
     \override Staff.TimeSignature #'style = #'()
