@@ -11,7 +11,7 @@ all-reg := $(notdir $(patsubst %.ly,%.reg,$(wildcard ly/*.ly)))
 
 
 regencia = regencia
-instrumentos = flauta-gaita-escaleta oboe-flautaDoceSoprano flautaDoceContralto clarineta-clarone saxAlto-saxBaritono saxSoprano-saxTenor fagote-flautaDoceBaixo saxHorn trompa trompete-bombardinoClaveDeSol trombone-bombardino tuba piano-acordeao percussao cavaquinho-banjo-violaCaipira violaMachete violaCocho violao violino-bandolim-rabeca viola-violaoTenor violoncelo baixo-baixoEletrico
+instrumentos = flauta-gaita-escaleta oboe-flautaDoceSoprano flautaDoceContralto clarineta-clarone saxAlto-saxBaritono saxSoprano-saxTenor fagote-flautaDoceBaixo saxHorn trompa trompete-bombardinoClaveDeSol trombone-bombardino tuba piano-acordeao percussao cavaquinho-banjo-violaCaipira violaMachete violaCocho violao violaoTenor-1 violino-bandolim-rabeca viola violoncelo baixo-baixoEletrico
 
 all_inst = $(addsuffix .pdf,$(instrumentos))
 
@@ -215,7 +215,7 @@ percussao.lytex: $(file) Makefile
 	-e 's/%#casa1e2#%/clave-per-casa1e2/g' \
 	-e "s/transpose c c/transpose c c/g" $< > $@
 
-cavaquinho-banjo-violasCaipiraCocho.lytex: $(file) Makefile
+cavaquinho-banjo-violaCaipira.lytex: $(file) Makefile
 	sed -e "s/keepWithTag #'fl/\keepWithTag #'cv/g" \
 	-e 's/instrumento{InstrCapa}/instrumento{Cavaquinho - Banjo - Viola Caipira}/g' \
 	-e 's/instrumento{Original}/instrumento{Cavaquinho - Banjo - Viola Caipira}/g' \
@@ -279,6 +279,21 @@ violao.lytex: $(file) Makefile
 	-e 's/%#casa1e2#%/clave-sol-casa1e2/g' \
 	-e "s/transpose c c/transpose c c,,/g" $< > $@
 
+violaoTenor-1.lytex: $(file) Makefile
+	sed -e "s/keepWithTag #'fl/\keepWithTag #'vlaot/g" \
+	-e 's/instrumento{InstrCapa}/instrumento{Violão Tenor 1}/g' \
+	-e 's/instrumento{Original}/instrumento{Violão Tenor 1}/g' \
+	-e 's/instrumento{Rodape}/instrumento{Violão Tenor 1}/g' \
+	-e 's/%%jogosdacapocp/agudos/g' \
+	-e 's/%%braco-instrumento/violaotenor/g' \
+	-e 's/%%braco-nome/do Violão Tenor/g' \
+	-e 's/%%break-vlaot/\\break/g' \
+	-e 's/%#claves#%/Clave de Dó/g' \
+	-e 's/%#exemplo-01#%/\\includegraphics[scale=1]{ex1-do}/g' \
+	-e 's/%#nota-01#%/Mi/g' \
+	-e 's/%#nota-02#%/Si/g' \
+	-e 's/%#casa1e2#%/clave-sol-casa1e2/g' \
+	-e "s/transpose c c/transpose c c,/g" $< > $@
 
 violino-bandolim-rabeca.lytex: $(file) Makefile
 	sed -e "s/keepWithTag #'fl/\keepWithTag #'vn/g" \
@@ -296,17 +311,17 @@ violino-bandolim-rabeca.lytex: $(file) Makefile
 	-e 's/%#casa1e2#%/clave-sol-casa1e2/g' \
 	-e "s/transpose c c/transpose c c/g" $< > $@
 
-viola-violaoTenor.lytex: $(file) Makefile
+viola.lytex: $(file) Makefile
 	sed -e "s/keepWithTag #'fl/\keepWithTag #'vla/g" \
-	-e 's/instrumento{InstrCapa}/instrumento{Viola - Violão Tenor}/g' \
-	-e 's/instrumento{Original}/instrumento{Viola - Violão Tenor}/g' \
-	-e 's/instrumento{Rodape}/instrumento{Viola - Violão Tenor}/g' \
+	-e 's/instrumento{InstrCapa}/instrumento{Viola}/g' \
+	-e 's/instrumento{Original}/instrumento{Viola}/g' \
+	-e 's/instrumento{Rodape}/instrumento{Viola}/g' \
 	-e 's/%%jogosdacapocp/agudos/g' \
 	-e 's/%%braco-instrumento/viola/g' \
 	-e 's/%%braco-nome/da Viola/g' \
 	-e 's/%%break-vla/\\break/g' \
-	-e 's/%#claves#%/Clave de Sol/g' \
-	-e 's/%#exemplo-01#%/\\includegraphics[scale=1]{ex1-sol}/g' \
+	-e 's/%#claves#%/Clave de Dó/g' \
+	-e 's/%#exemplo-01#%/\\includegraphics[scale=1]{ex1-do}/g' \
 	-e 's/%#nota-01#%/Mi/g' \
 	-e 's/%#nota-02#%/Si/g' \
 	-e 's/%#casa1e2#%/clave-sol-casa1e2/g' \
