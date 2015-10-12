@@ -418,7 +418,7 @@
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
     
-    d4_"1" d_"2" d_"3" d_"4"
+    d'4_"1" d_"2" d_"3" d_"4"
     a''2_"1 2" a_"3 4"
     a4 a a a
     d,,2 d
@@ -435,7 +435,7 @@
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
     
-    d''4_"1" d_"2" d_"3" d_"4"
+    d4_"1" d_"2" d_"3" d_"4"
     a2_"1 2" a_"3 4"
     a4 a a a
     d2 d
@@ -452,7 +452,7 @@
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
     
-    d,,4_"1" d_"2" d_"3" d_"4"
+    d,4_"1" d_"2" d_"3" d_"4"
     d2_"1 2" d_"3 4"
     d4 d d d
     d2 d
@@ -470,14 +470,14 @@
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
     
-    d4_"1" d_"2" d_"3" d_"4"
-    R1
-    d4_"1" d_"2" d_"3" d_"4"
-    R1
-    d4_"1" d_"2" d_"3" d_"4"
-    R1
-    d4 d d d
-    d d d d
+    d'4_"1" d_"2" d_"3" d_"4"
+    a'2_"1 2" a_"3 4"
+    a4 a a a
+    d,2 d
+    a'4 a d, d
+    a' d, a' d,
+    a' a a a
+    d,2 d
   }
 
   %% VIOLÃO TENOR 1
@@ -488,14 +488,14 @@
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
     
-    d'4_"1" d_"2" d_"3" d_"4"
-    d2_"1 2" d_"3 4"
-    d4 d d d
-    d2 d
-    d4 d d d
-    d d d d
-    d d d d
-    d2 d
+    d4_"1" d_"2" d_"3" d_"4"
+    a'2_"1 2" a_"3 4"
+    a4 a a a
+    d,2 d
+    a'4 a d, d
+    a' d, a' d,
+    a' a a a
+    d,2 d
   }
 
   %% VIOLÃO - GUITARRA
@@ -523,18 +523,18 @@
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
     
-    d,4^\markup {\italic pizz.}_"1" d_"2" d_"3" d_"4"
-    R1
-    d4_"1" d_"2" d_"3" d_"4"
-    R1
-    d4_"1" d_"2" d_"3" d_"4"
-    R1
-    d4 d d d
-    d d d d
+    d4^\markup {\italic pizz.}_"1" d_"2" d_"3" d_"4"
+    a'2_"1 2" a_"3 4"
+    a4 a a a
+    d,2 d
+    a'4 a d, d
+    a' d, a' d,
+    a' a a a
+    d,2 d
 
   }
 
-  %% VIOLA - VIOLÃO TENOR
+  %% VIOLA - VIOLÃO TENOR 2
   \tag #'vla {
     \clef alto
     \override Staff.TimeSignature #'style = #'()
@@ -542,14 +542,14 @@
     \override Score.BarNumber #'transparent = ##t
     \override Score.RehearsalMark #'font-size = #-2
     
-    d'4^\markup {\italic pizz.}_"1" d_"2" d_"3" d_"4"
-    R1
-    d4_"1" d_"2" d_"3" d_"4"
-    R1
-    d4_"1" d_"2" d_"3" d_"4"
-    R1
-    d4 d d d
-    d d d d
+    d4^\markup {\italic pizz.}_"1" d_"2" d_"3" d_"4"
+    a'2_"1 2" a_"3 4"
+    a4 a a a
+    d,2 d
+    a'4 a d, d
+    a' d, a' d,
+    a' a a a
+    d,2 d
 
   }
 
@@ -562,13 +562,14 @@
     \override Score.RehearsalMark #'font-size = #-2
     
     d4^\markup {\italic pizz.}_"1" d_"2" d_"3" d_"4"
-    R1
-    d4_"1" d_"2" d_"3" d_"4"
-    R1
-    d4_"1" d_"2" d_"3" d_"4"
-    R1
-    d4 d d d
-    d d d d
+    a'2_"1 2" a_"3 4"
+    a4 a a a
+    d,2 d
+    a'4 a d, d
+    a' d, a' d,
+    a' a a a
+    d,2 d
+    
   }
 
   %% CONTRABAIXO - BAIXO ELÉTRICO
@@ -580,13 +581,14 @@
     \override Score.RehearsalMark #'font-size = #-2
     
     d4^\markup {\italic pizz.}_"1" d_"2" d_"3" d_"4"
-    R1
-    d4_"1" d_"2" d_"3" d_"4"
-    R1
-    d4_"1" d_"2" d_"3" d_"4"
-    R1
-    d4 d d d
-    d d d d
+    a2_"1 2" a_"3 4"
+    a4 a a a
+    d2 d
+    a4 a d d
+    a d a d
+    a a a a
+    d2 d
+    
   }
 
 
